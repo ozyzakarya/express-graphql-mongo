@@ -7,11 +7,6 @@ const {
 const User = require('../model/User');
 const userType = require('../schema/userSchema');
 
-var fakeUserDatabase = [
-  { name: 'ALi 1', email: 'ali@mail.com', id: 1 },
-  { name: 'ALi 2', email: 'ali@mail.com', id: 2 },
-  { name: 'ALi 3', email: 'ali@mail.com', id: 3 },
-];
 const userQuery = new GraphQLObjectType({
   name: 'userQuery',
   fields: () => {
